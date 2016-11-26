@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Lo bueno, lo feo y lo malo</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
@@ -24,8 +24,170 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
+				<section><img src="img/cartel.jpg" style="float: right; height: 50vh"> <h1>Lo bueno, lo feo y lo malo</h1> Una introducción a Python</section>
+
+
+				<section><img src="img/cartel.jpg" style="float: right; height: 50vh"> "El bueno, el feo y el malo" es un spaghetti western.
+                <p><span class="fragment">Dicen que el spaghetti western es un subgénero.</spam></p>
+                <p><span class="fragment">Pero la mayoría de las películas del oeste que puedes recordar son spaghetti western.</spam></p>
+                <p><span class="fragment">No te fíes de lo que dicen.</spam></p>
+                </section>
+
+				<section><img src="img/python.png" style="float: right; height: 50vh"> Python es un lenguaje de script.
+                <p><span class="fragment">Dicen que los lenguajes de script son peores.</spam></p>
+                <p><span class="fragment">Que siempre será mejor un lenguaje compilado.</spam></p>
+                <p><span class="fragment">No te fíes de lo que dicen.</spam></p>
+                </section>
+
+				<section><img src="img/python.png" style="float: right; height: 50vh">Python es multiplataforma.
+                <p><span class="fragment">Python es multiparadigma.</spam></p>
+                <p><span class="fragment">Python es dinámicamente tipado.</spam></p>
+                </section>
+
+
+                <section data-background="img/personajes.gif"><p style="background-color: #000000;" class="fragment">Una buena historia siempre comienza presentando los protagonistas.</p></span></section>
+
+                <section>Variables y tipos de dato
+                <pre><code class="hljs" style="word-wrap: break-word;">
+titulo = "El Bueno, el feo y el malo"
+director = "Sergio Leone"
+estreno = 1966
+esta_peli_mola = True
+
+# Presentamos los protas
+personajes = ["El Bueno", "El Feo", "El Malo"]
+print personajes[1]
+
+actores = {"El Bueno": "Clint Eastwood", \\
+"El Feo": "Eli Wallach", "El Malo": "Lee Van Cleef"}
+
+print actores["El Bueno"]
+print actores[personajes[1]]
+                </code></pre>
+                </section>
+
+
+               <section data-background="img/disparos.gif"><p class="fragment" style="background-color: #000000;">Un buen spaghetti western necesita disparos.</p></section>
+
+                <section>Un lenguaje necesita estructuras de control.
+                <pre><code class="hljs" style="word-wrap: break-word;">
+# Todos disparan a todos, claro
+personajes = ["El Bueno", "El Feo", "El Malo"]
+for tirador in personajes:
+    for objetivo in personajes:
+        if tirador != objetivo:
+            print tirador + " dispara a " + objetivo
+        if tirador == "El Malo" AND objetivo == "El Bueno":
+            print "Y falla"
+
+# hasta acabar el cargador...
+i = 0
+while i < 6:
+    print "BANG!"
+    i += 1
+                </code></pre>
+                </section>
+
+               <section data-background="img/espacio_vacio.gif"><p style="background-color: #000000;" class="fragment">En el cine, los espacios en blanco importan.</p></section>
+                <section>En Python también.
+                <pre><code class="hljs" style="word-wrap: break-word;">
+# Todos disparan a todos, claro
+personajes = ["El Bueno", "El Feo", "El Malo"]
+for tirador in personajes:
+    for objetivo in personajes:
+        if tirador != objetivo:
+            print tirador + " dispara a " + objetivo
+        if tirador == "El Malo" AND objetivo == "El Bueno":
+            print "Y falla"
+
+# hasta acabar el cargador...
+i = 0
+while i < 6:
+    print "BANG!"
+    i += 1
+                </code></pre>
+                </section>
+
+
+
+
+
+                <section data-background="img/good.gif">
+                <p style="background-color: #000000;" class="fragment">Python está diseñado para ser claro y sencillo. Fácil de leer y de escribir.</p>
+                <p style="background-color: #000000;" class="fragment">Eso es bueno.</p>
+                </section>
+
+
+
+
+
+
+
+               <section data-background="img/piezas.gif"><p style="background-color: #000000;" class="fragment">Tuco puede construir una pistola reutilizando piezas de otras.</p></section>
+
+
+
+                <section>Nosotros preferimos usar funciones.
+                <pre><code class="hljs" style="word-wrap: break-word;">
+                </code></pre>
+                </section>
+
+
+
+
+               <section data-background="img/dos_clases.gif"><p style="background-color: #000000;" class="fragment">"El mundo se divide en dos categorías: los que tienen un revólver cargado y los que cavan"</p></section>
+
+
+                <section>Y los programadores: Los que tienen módulos y los que escriben.
+                <pre><code class="hljs" style="word-wrap: break-word;">
+                </code></pre>
+                </section>
+
+
+                <section data-background="img/armas.gif">
+                <p style="background-color: #000000;" class="fragment">Durante la guerra de secesión convivieron dos tipos de armas: De avancarga y de casquillo.</p>
+                <p style="background-color: #000000;" class="fragment">(pero da igual, porque en todas las películas están siempre mal)</p>
+                </section>
+
+
+                <section>Ahora conviven dos versiones de Python.
+                <pre><code class="hljs" style="word-wrap: break-word;">
+                </code></pre>
+                </section>
+
+
+                <section data-background="img/bad.gif">
+                <p style="background-color: #000000;" class="fragment">Python 3 es mejor y soluciona problemas de Python 2, pero aún hay muchos módulos no soportados.</p>
+                <p style="background-color: #000000;" class="fragment">Eso es malo.</p>
+                </section>
+
+
+                <section>
+                <pre><code class="hljs" style="word-wrap: break-word;">
+                </code></pre>
+                </section>
+                <section>
+                <pre><code class="hljs" style="word-wrap: break-word;">
+                </code></pre>
+                </section>
+                <section>
+                <pre><code class="hljs" style="word-wrap: break-word;">
+                </code></pre>
+                </section>
+
+
+
+
+				<section data-background="img/gatos.gif">Slide 1</section>
 				<section>Slide 2</section>
+
+
+
+
+
+
+
+
 			</div>
 		</div>
 
