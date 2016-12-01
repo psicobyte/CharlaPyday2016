@@ -145,6 +145,31 @@ while i < 6:
 
                 <section>Nosotros preferimos usar funciones.
                 <pre><code class="hljs" style="word-wrap: break-word;">
+def soldados(color):
+    if color == "azul":
+        print "Viva el Norte"
+    elif color == "gris":
+        print "Viva el Sur, muerte a los yanquis"
+    else:
+        print "Eh?"
+
+soldados("azul")
+                </code></pre>
+                <aside class="notes"></aside>
+                </section>
+
+                <section>...mejor con return
+                <pre><code class="hljs" style="word-wrap: break-word;">
+def soldados_ret(color):
+    if color == "azul":
+        return "Viva el Norte"
+    elif color == "gris":
+        return "Viva el Sur, muerte a los yanquis."
+    else:
+        return "Eh?"
+
+texto = soldados_ret("gris")
+print texto
                 </code></pre>
                 <aside class="notes"></aside>
                 </section>
