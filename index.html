@@ -38,7 +38,7 @@
                 <p><span class="fragment">Dicen que el spaghetti western es un subgénero.</spam></p>
                 <p><span class="fragment">Pero la mayoría de las películas del oeste que puedes recordar son spaghetti western.</spam></p>
                 <p><span class="fragment">No te fíes de lo que dicen.</spam></p>
-                <aside class="notes">Dirigida en 1966 por Sergio Leone con música de Enio Morricone. Este año cumple 50.</aside>
+                <aside class="notes">Dirigida en 1966 por Sergio Leone en Almería y Burgos, con música de Enio Morricone. Este año cumple 50.</aside>
                 </section>
 
 				<section><img src="img/python.png" style="float: right; height: 50vh"> Python es un lenguaje de script.
@@ -59,7 +59,8 @@
                 <aside class="notes">"El Bueno" (Rubio): Clint Eastwood. "El Feo" (Tuco): Eli Wallach, "El Malo" (Sentencia): Lee Van Cleef</aside></section>
 
                 <section>Variables y tipos de dato
-                <pre><code class="hljs" style="word-wrap: break-word;">
+                <pre><code class="hljs" style="word-wrap: break-word;">#!/usr/bin/python
+# -*- coding: utf-8 -*-
 titulo = "El Bueno, el feo y el malo"
 director = "Sergio Leone"
 estreno = 1966
@@ -73,10 +74,17 @@ actores = {"El Bueno": "Clint Eastwood", \
 "El Feo": "Eli Wallach", "El Malo": "Lee Van Cleef"}
 
 print actores["El Bueno"]
-print actores[personajes[1]]
-                </code></pre>
+print actores[personajes[1]]</code></pre>
                 <aside class="notes">Comentarios con #. La barra \ sobra, sólo está de ejemplo, porque las llaves y paréntesis continúan la línea. Los índices empienzan en 0.</aside>
                 </section>
+
+
+                <section data-background="img/ugly.gif">
+                <p style="background-color: #000000;" class="fragment">Unicode en Python 2.</p>
+                <p style="background-color: #000000;" class="fragment">Eso es feo.</p>
+                <aside class="notes">Especialmente en Windows</aside>
+                </section>
+
 
 
                <section data-background="img/disparos.gif"><p class="fragment" style="background-color: #000000;">No puede haber spaghetti western sin disparos.</p>
@@ -123,20 +131,11 @@ while i < 6:
                 <aside class="notes">Los dos puntos. Los if, elif, else. Los bucles tienen break y continue</aside>
                 </section>
 
-
-
-
-
                 <section data-background="img/good.gif">
                 <p style="background-color: #000000;" class="fragment">Python está diseñado para ser claro y sencillo. Fácil de leer y de escribir.</p>
                 <p style="background-color: #000000;" class="fragment">Eso es bueno.</p>
                 <aside class="notes"></aside>
                 </section>
-
-
-
-
-
 
 
                <section data-background="img/piezas.gif"><p style="background-color: #000000;" class="fragment">Tuco puede construir una pistola reutilizando piezas de otras.</p></section>
@@ -183,7 +182,7 @@ print texto
 
                 <section>Clases y objetos.
                 <pre><code class="hljs" style="word-wrap: break-word;">
-class Pelicula:
+class Film:
     def __init__(self, title, year, director):
         self.title = title
         self.year = year
@@ -194,13 +193,18 @@ class Pelicula:
         print "Año: " + self.year
         print "Director: " + self.director
 
-peli = Pelicula("El bueno, el feo y el malo", 1966, "Sergio Leone")
+peli = Film("El bueno, el feo y el malo", 1966, "Sergio Leone")
 
 peli.muestra()
 </code></pre>
                 <aside class="notes"></aside>
                 </section>
 
+                <section data-background="img/good.gif">
+                <p style="background-color: #000000;" class="fragment">Python tiene una cómoda curva de aprendizaje.</p>
+                <p style="background-color: #000000;" class="fragment">Eso es bueno.</p>
+                <aside class="notes"></aside>
+                </section>
 
 
                <section data-background="img/dos_clases.gif"><p style="background-color: #000000;" class="fragment">"El mundo se divide en dos categorías: los que tienen un revólver cargado y los que cavan"</p></section>
@@ -235,24 +239,28 @@ for peli in resp:
 
                 <section>Ahora conviven dos versiones de Python.
                 <pre><code class="hljs" style="word-wrap: break-word;">
+#!/usr/bin/python2
+
+print "Cada revolver tiene su voz, y esa la conozco."
+                </code></pre>
+
+                <pre><code class="hljs" style="word-wrap: break-word;">
+#!/usr/bin/python3
+
+print("Cuando se dispara, no se dice nada.")
                 </code></pre>
                 <aside class="notes"></aside>
                 </section>
 
 
-                <section data-background="img/bad.gif">
-                <p style="background-color: #000000;" class="fragment">Python 3 es mejor y soluciona problemas de Python 2, pero aún hay muchos módulos no soportados.</p>
-                <p style="background-color: #000000;" class="fragment">Eso es malo.</p>
-                </section>
-
-
-
-
                 <section data-background="img/ugly.gif">
-                <p style="background-color: #000000;" class="fragment">Unicode en Python 2.</p>
+                <p style="background-color: #000000;" class="fragment">Python 3 es mejor y soluciona problemas de Python 2, pero aún hay muchos módulos no soportados.</p>
                 <p style="background-color: #000000;" class="fragment">Eso es feo.</p>
-                <aside class="notes">Especialmente en Windows</aside>
                 </section>
+
+
+
+
 
                 <section data-background="img/armas.gif">
                 <div style="background-color: #000000;" class="fragment">Varias implementaciones de Python:
@@ -282,27 +290,6 @@ for peli in resp:
 
 
 
-
-                <section>
-                <pre><code class="hljs" style="word-wrap: break-word;">
-                </code></pre>
-                <aside class="notes"></aside>
-                </section>
-                <section>
-                <pre><code class="hljs" style="word-wrap: break-word;">
-                </code></pre>
-                <aside class="notes"></aside>
-                </section>
-                <section>
-                <pre><code class="hljs" style="word-wrap: break-word;">
-                </code></pre>
-                <aside class="notes"></aside>
-                </section>
-
-
-
-
-
                 <section data-background="img/adios.gif">
                 <p style="background-color: #000000;" class="fragment">Muchas Gracias.</p>
                 <p style="background-color: #000000;" class="fragment">¿Preguntas?</p>
@@ -313,7 +300,9 @@ for peli in resp:
 
 
                 <section data-background="img/adios.gif">
-                <div style="background-color: #000000;" class="fragment">Fuente de las imágenes:
+                <div style="background-color: #000000;" class="fragment">
+<li><a href="http://www.python-granada.es/">http://www.python-granada.es/</a></li>
+                <p>Fuente de las imágenes:</p>
                 <ul>
                 <li>Cartel de la película: <a href="http://www.sensacine.com">http://www.sensacine.com</a></li>
                 <li>Gifs animados: <a href="http://giphy.com/">http://giphy.com</a></li>
